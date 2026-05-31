@@ -1,11 +1,4 @@
 # Lessons Learned
-
-## Purpose
-Capture key technical learnings, misconfigurations, fixes, and improvements identified while building and operating the lab.
-
-## Format
-Each entry includes: context, issue, root cause, fix, verification, follow-up.
-
 ---
 
 ## 2026-01-29 — Network reachability (ICMP failures)
