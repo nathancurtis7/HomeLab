@@ -2,7 +2,7 @@
 
 ## Overview
 This repo documents the progression of my personal cybersecurity home lab which is used to emulate real threat actor behaviour and enhance my understanding of how real attacks are conducted.
-The lab is designed to mirror a small enterprise-style environment using both Splunk/Sentinel to gain experience with more than just one SIEM tool.
+The lab is designed to mirror a small enterprise-style environment using both Splunk/Sentinel to gain experience with more than just one SIEM tool, how to apply security policies, how to secure devices and networks and much more. 
 
 ## Lab Infrastructure
   - **Attacker Laptop**
