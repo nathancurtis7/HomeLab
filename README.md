@@ -1,56 +1,21 @@
 # Cybersecurity Home Lab
 
 ## Overview
-This repo documents my personal cybersecurity home lab used to develop hands-on skills in networking, detection, SOC, and attack simulation.
-The lab is designed to mirror a small enterprise-style environment with clear separation between attacker, victim, and monitoring systems.
+This repo documents my personal cybersecurity home lab used to emulate real threat actor behaviour and enhance my understanding of how real attacks are conducted.
+The lab is designed to mirror a small enterprise-style environment using both Splunk/Sentinel to gain experience with more than just one SIEM tool.
 
-## Repo Map
-- `architecture/` — lab overview and network diagram
-- `setup/` — build notes and configuration steps
-- `attacks/` — attack simulations and MITRE mappings
-- `detection/` — Splunk content and detections
-- `pcaps/` — packet captures (sanitised)
-- `notes/` — lessons learned / troubleshooting log
+## Lab Infrastructure
+  - **Attacker Laptop**
+    - Running Kali Linux VM and Splunk ubuntu server VM
+    - Used to attack the victim machine
 
-- ## Project Status
-Active : building out victim configuration and initial detections in Splunk.
+  - **Victim Laptop**
+    - Running Windows11 with reduced security baseline to allow for exploitation
+    - Event logs are recorded here and sent to Splunk/Sentinel through Splunk Universal Forwarder and Azure Monitor Agent
 
-## Objectives
-- Practice real-world SOC workflows
-- Simulate common attack techniques in a controlled environment
-- Analyse network traffic and host logs
-- Build detection logic aligned to certs such as Security+ and CySA+
-
-## Lab Environment
-- **Main Laptop (Host / Monitoring)**
-  - Windows 11
-  - Network management and analysis
-  - Splunk for log ingestion and detection
-
-- **Attacker Laptop**
-  - Kali Linux (VM)
-  - Used for reconnaissance and attack simulation
-
-- **Victim Laptop**
-  - Dedicated victim system (in progress)
-  - Will be used to generate realistic attack telemetry
-
-- **Networking**
-  - Isolated internal lab network
-  - Private RFC1918 addressing (`10.10.10.0/24`)
-  - Managed switch and dedicated Ethernet interfaces
-
-## What This Demonstrates
-- Network segmentation and isolation
-- Blue team / SOC mindset
-- Attack simulation and detection
-- Log analysis and PCAP investigation
-- Structured technical documentation
-
-## Current Focus
-- Lab network stabilisation
-- Splunk ingestion and baseline detections
-- Initial attack simulations from Kali Linux
+  - **Networking**
+    - Isolated lab network using private RFC1918 addressing (`10.10.10.0/24`)
+    - The two laptops are connected via a managed switch, ethernet cables and 
 
 ## Disclaimer
 All activity is conducted within an isolated lab environment.
