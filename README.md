@@ -15,8 +15,9 @@ The lab is designed to mirror a small enterprise-style environment using both Sp
 
   - **Networking**
     - Isolated lab network using private RFC1918 addressing (`10.10.10.0/24`)
-    - The two laptops are connected via a managed switch, ethernet cables and 
+    - The two laptops are connected via a managed switch, ethernet cables and ethernet to USB adapters
 
 ## Disclaimer
-All activity is conducted within an isolated lab environment.
-No testing is performed against production or external systems.
+All activity is conducted within an isolated lab environment using my own devices without internet connectivity.
+All attacks and activity are conducted against myself rather than companies or other people.
+The aim of this lab is purely to enhance my detection skills to determine what real threat actor behaviour looks like.
