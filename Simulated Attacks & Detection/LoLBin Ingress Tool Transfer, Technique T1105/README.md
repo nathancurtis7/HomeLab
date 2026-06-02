@@ -2,7 +2,7 @@
 
 ## Summary
 
-Utilising certutil.exe, I created a LoLBin (living off the land binary) Ingress Tool Transfer within my isolated home lab environment. Adversaries routinely abuse tools like CertUtil as they are legit Microsoft tools and are trusted by the OS and bypass allow lists.
+Utilising certutil.exe, I created a LoLBin (living off the land binary) Ingress Tool Transfer within my isolated home lab environment. Adversaries routinely abuse tools like CertUtil as they are legit Microsoft tools, are trusted by the OS and bypass allow lists.
 To ensure this payload was delivered successfully, I disabled MS defender real time protection on the 'Victim' device to emulate threat actor actions after gaining initial access and prevent defender from blocking the payload retrieval.
 
 ## Payload Staging and Delivery
