@@ -1,11 +1,11 @@
-#HomeLab Simulated Attack & Detection - LoLBin Ingress Tool Transfer, Technique T1105#
+# HomeLab Simulated Attack & Detection - LoLBin Ingress Tool Transfer, Technique T1105
 
-##Summary##
+## Summary
 
 Utilising certutil.exe, I created a LoLBin (living off the land binary) Ingress Tool Transfer within my isolated home lab environment. Adversaries routinely abuse tools like CertUtil as they are legit Microsoft tools and are trusted by the OS and bypass allow lists.
 To ensure this payload was delivered successfully, I disabled MS defender real time protection on the 'Victim' device to emulate threat actor actions after gaining initial access and prevent defender from blocking the payload retrieval.
 
-##Payload Staging and Delivery##
+## Payload Staging and Delivery
 
 The first step was creating the 'malicious' payload. As this is purely for simulation and detection purposes, this payload is simply a .txt file containing plaintext of "this is a simulated payload".
 I then hosted a python HTTP server on port 8000 and ran a curl command to ensure the file can be successfully retrieved.
@@ -29,7 +29,7 @@ The delivery was successful as a 200 HTTP response was returned and confirmed th
 
 </details>
 
-##Detection and Forensic Analysis##
+## Detection and Forensic Analysis
 
 Now assuming the role of a Security Analyst or Digital Forensics Analyst, we dug into the Sysmon event logs within Event Viewer on the Victim device. 
 In the screenshot 'SysmonEvent', you can see an event with event ID 1 (Process creation) which shows the exact command line that was executed.
