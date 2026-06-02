@@ -58,6 +58,7 @@ In a live investigation, we could dig into OSINT and other intelligence surround
 </details>
 
 To operationalise these findings, we could implement an analytic rule within Sentinel with the following KQL :
+
 DeviceProcessEvents
 | where InitiatingProcessFileName =~ "certutil.exe" or ProcessCommandLine has "certutil"
 | where ProcessCommandLine has_any("-urlcache", "-split", "-f") and ProcessCommandLine has "http"
